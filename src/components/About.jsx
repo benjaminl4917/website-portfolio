@@ -15,10 +15,6 @@ const About = () => {
 
             <br />
 
-            <p>
-                As someone committed to always learning, I'm eager to leverage my technical skills and creative problem-solving abilities to contribute to innovative projects. 
-                Currently, I am driven by the desire to explore emerging technologies and develop practical solutions to make meaningful impact.
-            </p>
         </div>
     </div>
   )
