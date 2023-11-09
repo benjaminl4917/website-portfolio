@@ -34,17 +34,7 @@ const SocialLinks = () => {
                 </>
             ),
             href: "mailto:benjilin25@gmail.com",
-        },
-        {
-            id: 4,
-            child: (
-                <>
-                Resume <BsFillPersonLinesFill size={30}/>
-                </>
-            ),
-            href: "/Benjamin Lin Resume.pdf",
-            style: 'rounded-br-md',
-            download: true,
+            style: 'rounded-br-md'
         },
     ]
     
