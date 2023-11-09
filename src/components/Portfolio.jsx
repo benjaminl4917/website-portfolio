@@ -32,18 +32,6 @@ const Portfolio = () => {
       project_name: "Virtual Memory Simulator",
       href: "https://github.com/benjaminl4917/Virtual-Memory-Simulator",
     },
-    {
-      id: 5,
-      src: installNode,
-      project_name: "QR Code Scanner",
-      href: "https://www.linkedin.com/in/benjamin-y-lin/",
-    },
-    {
-      id: 6,
-      src: reactWeather,
-      project_name: "QR Code Scanner",
-      href: "https://www.linkedin.com/in/benjamin-y-lin/",
-    },
   ];
 
   return (
