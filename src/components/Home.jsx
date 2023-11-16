@@ -8,11 +8,15 @@ const Home = () => {
     <div name="home" className='h-screen w-full bg-gradient-to-b from-black via-black to-gray-800'>
         <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
             <div className ="flex flex-col justify-center h-full">
-                <h2 className="Text-4xl sm:text-7xl font-bold text-white">
-                    I'm a Full Stack Developer
+                <h2 className="Text-4xl sm:text-7xl font-bold text-white mb-4">
+                    I'm a Backend Developer
+                </h2>
+                <h2 className="text-base sm:text-sm font-bold text-white">
+                    (Learning to be a Full-Stack Developer)
                 </h2>
                 <p className="text-gray-500 py-4 max-w-md">
-                    Hi, my name is Benjamin Lin and I'm currently a third year at the University of California - Irvine. 
+                    Hi, my name is <span style={{ fontWeight: 'bold', color: 'white' }}>Benjamin Lin</span> and I'm currently a third year at the <span style={{ fontWeight: 'bold', color: 'white' }}>University of California - Irvine</span>.  As someone committed to always learning, I'm eager to leverage my technical skills and creative problem-solving abilities to contribute to innovative projects. 
+                    Currently, I am driven by the desire to explore emerging technologies and develop practical solutions to make meaningful impact.
                 </p>
 
                 <div>
