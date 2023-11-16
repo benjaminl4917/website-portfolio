@@ -1,34 +1,32 @@
 import React from "react";
-import arrayDestruct from "../assets/portfolio/arrayDestruct.jpg";
-import installNode from "../assets/portfolio/installNode.jpg";
-import navbar from "../assets/portfolio/navbar.jpg";
-import reactParallax from "../assets/portfolio/reactParallax.jpg";
-import reactSmooth from "../assets/portfolio/reactSmooth.jpg";
-import reactWeather from "../assets/portfolio/reactWeather.jpg";
+import discord from "../assets/portfolio/discord.png";
+import qrcode from "../assets/portfolio/qrcodeimage.jpg";
+import dream from "../assets/portfolio/dream.jpg";
+import virtualmemory from "../assets/portfolio/virtualmemory.png";
 
 const Portfolio = () => {
   const portfolios = [
     {
       id: 1,
-      src: arrayDestruct,
+      src: discord,
       project_name: "Rasenbot",
       href: "https://github.com/LinsaneFC/RasenBot",
     },
     {
       id: 2,
-      src: reactParallax,
+      src: qrcode,
       project_name: "QR Code Scanner",
       href: "https://github.com/benjaminl4917/QR_Code_Scanner",
     },
     {
       id: 3,
-      src: navbar,
+      src: dream,
       project_name: "Dream Journal",
       href: "https://github.com/benjaminl4917/Dream_Journal_Server",
     },
     {
       id: 4,
-      src: reactSmooth,
+      src: virtualmemory,
       project_name: "Virtual Memory Simulator",
       href: "https://github.com/benjaminl4917/Virtual-Memory-Simulator",
     },
