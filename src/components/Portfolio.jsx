@@ -3,6 +3,7 @@ import discord from "../assets/portfolio/discord.png";
 import qrcode from "../assets/portfolio/qrcodeimage.jpg";
 import dream from "../assets/portfolio/dream.jpg";
 import virtualmemory from "../assets/portfolio/virtualmemory.png";
+import shell from "../assets/portfolio/shell.png";
 
 const Portfolio = () => {
   const portfolios = [
@@ -29,6 +30,12 @@ const Portfolio = () => {
       src: virtualmemory,
       project_name: "Virtual Memory Simulator",
       href: "https://github.com/benjaminl4917/Virtual-Memory-Simulator",
+    },
+    {
+      id: 5,
+      src: shell,
+      project_name: "Shell",
+      href: "https://github.com/benjaminl4917/shell",
     },
   ];
 
