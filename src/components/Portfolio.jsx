@@ -1,5 +1,5 @@
 import React from "react";
-import discord from "../assets/portfolio/discord.png";
+import discord from "../assets/portfolio/discord.jpeg";
 import qrcode from "../assets/portfolio/qrcodeimage.jpg";
 import dream from "../assets/portfolio/dream.jpg";
 import virtualmemory from "../assets/portfolio/virtualmemory.png";
@@ -11,30 +11,35 @@ const Portfolio = () => {
       id: 1,
       src: discord,
       project_name: "Rasenbot",
+      technologies: "Discord.py | MongoDB",
       href: "https://github.com/LinsaneFC/RasenBot",
     },
     {
       id: 2,
       src: qrcode,
       project_name: "QR Code Scanner",
+      technologies: "Java | Android SDK",
       href: "https://github.com/benjaminl4917/QR_Code_Scanner",
     },
     {
       id: 3,
       src: dream,
       project_name: "Dream Journal",
+      technologies: "React | TailwindCSS | Django | CockroachDB",
       href: "https://github.com/benjaminl4917/Dream_Journal_Server",
     },
     {
       id: 4,
       src: virtualmemory,
       project_name: "Virtual Memory Simulator",
+      technologies: "C Programming Language",
       href: "https://github.com/benjaminl4917/Virtual-Memory-Simulator",
     },
     {
       id: 5,
       src: shell,
       project_name: "Shell",
+      technologies: "C Programming Language",
       href: "https://github.com/benjaminl4917/shell",
     },
   ];
@@ -50,17 +55,20 @@ const Portfolio = () => {
         </div>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-          {portfolios.map(({ id, src, href, project_name }) => (
+          {portfolios.map(({ id, src, href, project_name, technologies }) => (
             <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
               <a href={href} target="_blank" rel="noopener noreferrer">
                 <img
                   src={src}
                   alt=""
-                  className="rounded-md duration-200 hover:scale-105"
+                  className="rounded-md duration-200 hover:scale-105 max-w-full max-h-40 object-cover"
+                  style={{ width: '100%', height: '100%' }}
                 />
                 <div className="flex items-center justify-center">
                   <button className="px-6 py-3 m-4 duration-200 hover:scale-105 justify-center">
                     {project_name}
+                    <hr className="border-gray-300 my-2 mx-auto" />
+                    <p className="mt-2 text-sm">{technologies}</p>
                   </button>
                 </div>
               </a>
