@@ -42,26 +42,29 @@ const Portfolio = () => {
       technologies: "C Programming Language",
       href: "https://github.com/benjaminl4917/shell",
     },
+    
   ];
 
   return (
     <div name="portfolio" className="bg-gradient-to-b from-gray-800 to-black w-full text-white md:h-screen">
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
         <div className="pb-8">
-          <h2 className="text-4xl  sm:text-6xl font-bold inline border-b-4 border-gray-500">
-            Portfolio
+          <h2 className="text-4xl  sm:text-7xl font-bold inline border-gray-500 hover:text-customRed transition-colors duration-300 mb-4">
+            Projects
           </h2>
-          <p className="py-6">Check out some of my work right here</p>
+          <h2 className="text-base sm:text-sm font-bold text-white mt-2">
+              (A collection of projects showcasing my skills in various technologies such as Python, C, React, and more...)
+          </h2>
         </div>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
           {portfolios.map(({ id, src, href, project_name, technologies }) => (
-            <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
+            <div key={id} className="shadow-md shadow-gray-600 hover:shadow-customRed hover:scale-105 rounded-lg">
               <a href={href} target="_blank" rel="noopener noreferrer">
                 <img
                   src={src}
                   alt=""
-                  className="rounded-md duration-200 hover:scale-105 max-w-full max-h-40 object-cover"
+                  className="rounded-md max-w-full max-h-40 object-cover"
                   style={{ width: '100%', height: '100%' }}
                 />
                 <div className="flex items-center justify-center">
