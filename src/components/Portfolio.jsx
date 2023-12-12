@@ -4,6 +4,7 @@ import qrcode from "../assets/portfolio/qrcodeimage.jpg";
 import dream from "../assets/portfolio/dream.jpg";
 import virtualmemory from "../assets/portfolio/virtualmemory.png";
 import shell from "../assets/portfolio/shell.png";
+import clientserver from "../assets/portfolio/clientserver.jpeg";
 
 const Portfolio = () => {
   const portfolios = [
@@ -42,6 +43,13 @@ const Portfolio = () => {
       technologies: "C Programming Language",
       href: "https://github.com/benjaminl4917/shell",
     },
+    {
+      id: 6,
+      src: clientserver,
+      project_name: "Client Server",
+      technologies: "C Programming Language, TCP/IP",
+      href: "https://github.com/benjaminl4917/ClientServerApplication",
+    },
     
   ];
 
@@ -60,12 +68,12 @@ const Portfolio = () => {
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
           {portfolios.map(({ id, src, href, project_name, technologies }) => (
             <div key={id} className="shadow-md shadow-gray-600 hover:shadow-customRed hover:scale-105 rounded-lg">
-              <a href={href} target="_blank" rel="noopener noreferrer">
+              <a href={href} target="_blank" rel="noopener noreferrer" >
                 <img
                   src={src}
                   alt=""
-                  className="rounded-md max-w-full max-h-40 object-cover"
-                  style={{ width: '100%', height: '100%' }}
+                  className="rounded-md max-w-full max-h-40 object-cover p-2"
+                  style={{ width: '100%', height: '100%', boxShadow: '0px -10px 10px -10px rgba(0, 0, 0, 0.75)', color: "shadow-gray-600" }}
                 />
                 <div className="flex items-center justify-center">
                   <button className="px-6 py-3 m-4 duration-200 hover:scale-105 justify-center">
