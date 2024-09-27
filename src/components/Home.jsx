@@ -18,11 +18,27 @@ const Home = () => {
                         Hi, my name is <span style={{ fontWeight: 'bold', color: 'white' } }>Benjamin Lin</span> and I'm currently a third year at the <span style={{ fontWeight: 'bold', color: 'white' }}>University of California - Irvine</span>.  As someone committed to always learning, I'm eager to leverage my technical skills and creative problem-solving abilities to contribute to innovative projects. 
                         Currently, I am driven by the desire to explore emerging technologies and develop practical solutions to make meaningful impact.
                     </p>
+
+                    <div>
+                    <Link
+                        to="work experience"
+                        duration={500}
+                        offset={-200}
+                        smooth
+                        className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-customRed to-customRedGradient cursor-pointer"
+                        >
+                        Work Experiences
+                        <span className="group-hover:rotate-90 duration-300">
+                            <MdOutlineKeyboardArrowRight size={23} className="ml-1" />
+                        </span>
+                    </Link>
+                    </div>
     
                     <div>
                     <Link
                         to="portfolio"
                         duration={500}
+                        offset={-50}
                         smooth
                         className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-customRed to-customRedGradient cursor-pointer"
                         >
